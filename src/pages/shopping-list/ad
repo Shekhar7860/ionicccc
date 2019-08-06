@@ -1,0 +1,1 @@
+cordova plugin add cordova-plugin-admob-free --save --variable ADMOB_APP_ID="ca-app-pub-9784974231819956~5730212982"
