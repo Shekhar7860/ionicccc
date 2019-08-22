@@ -8,8 +8,11 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
 import { MyApp } from './app.component';
 import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
+import { ModalPage } from '../pages/modal/modal';
 import { AddShoppingPage} from '../pages/add-shopping/add-shopping';
+import {DataPage} from '../pages/data/data';
 import { EditShoppingItemPage} from '../pages/edit-shopping-item/edit-shopping-item';
+import { SocialSharing } from '@ionic-native/social-sharing';
 import { AdMobFree } from '@ionic-native/admob-free';
 
 @NgModule({
@@ -17,7 +20,9 @@ import { AdMobFree } from '@ionic-native/admob-free';
     MyApp,
     ShoppingListPage,
     AddShoppingPage,
-    EditShoppingItemPage
+    EditShoppingItemPage,
+    ModalPage,
+    DataPage
   ],
   imports: [
     BrowserModule,
@@ -30,12 +35,15 @@ import { AdMobFree } from '@ionic-native/admob-free';
     MyApp,
     ShoppingListPage,
     AddShoppingPage,
-    EditShoppingItemPage        
+    EditShoppingItemPage,
+    ModalPage,
+    DataPage      
   ],
   providers: [
     StatusBar,
     SplashScreen,
     AdMobFree,
+    SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

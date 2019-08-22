@@ -1,15 +1,20 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Shopping List</ion-title>
+      <ion-buttons>
+          <button ion-button  icon-only (click)="share()">
+              <ion-icon   name="share"></ion-icon>
+            </button>
+      </ion-buttons>
+    <div style="text-align: center;color:white;font-size:20px;margin-top: -20px">Shopping List</div>
     <ion-buttons end>
-        <!-- <button ion-button icon-only (click)="navigateToAddShoppingPage()">
-            <ion-icon name="add"></ion-icon>
-          </button> -->
+        <button ion-button icon-only (click)="openModal()">
+            <ion-icon name="help"></ion-icon>
+          </button>
     </ion-buttons>
   </ion-navbar>
 
-</ion-header>
+</ion-header>        
 
 
 <ion-content padding>
