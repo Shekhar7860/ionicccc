@@ -21,8 +21,8 @@ export class DataPage {
       list : any = [];             
   constructor(public navCtrl: NavController, public navParams: NavParams, private database: AngularFireDatabase) {
     this.list = this.database.list('users');
-           
-  }                               
+                      
+  }                                          
                                    
   ionViewDidLoad() {
     console.log('ionViewDidLoad DataPage');

@@ -49,7 +49,7 @@ console.log('working')
   }).catch(e => console.log(e, 'error'));           
     this.navCtrl.push(EditShoppingItemPage, 
       { shoppingItemId: shoppingItem.$key })
-   
+           
   }
                             
   share () {
@@ -65,7 +65,7 @@ console.log('working')
      console.log('interstial working')
   }).catch(e => console.log(e, 'error')); 
   this.socialSharing.share("checkout modicare products - https://play.google.com/store/apps/details?id=com.modi.app&hl=en", null, null, null);
-
+           
   }
   public openModal(){ 
     let interstitialConfig: AdMobFreeInterstitialConfig = {
